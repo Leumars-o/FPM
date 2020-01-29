@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Kanit';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Kanit Medium Italic'), local('Kanit-MediumItalic'), url(https://fonts.gstatic.com/s/kanit/v5/nKKS-Go6G5tXcraQI_GjZaNhNw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kanit Light'), local('Kanit-Light'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr4-ORWnVac.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kanit Regular'), local('Kanit-Regular'), url(https://fonts.gstatic.com/s/kanit/v5/nKKZ-Go6G5tXcraVGwY.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Kanit Medium'), local('Kanit-Medium'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr5mOBWnVac.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Kanit SemiBold'), local('Kanit-SemiBold'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr5KPxWnVac.woff) format('woff');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Kanit Black'), local('Kanit-Black'), url(https://fonts.gstatic.com/s/kanit/v5/nKKU-Go6G5tXcr4WPBWnVac.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc-.woff) format('woff');
+}

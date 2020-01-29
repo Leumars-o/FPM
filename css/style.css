@@ -1,11 +1,12 @@
 @charset "UTF-8";
+@import
 /*
 *
 * Trunk version 2.0.0
 *
 */
-a:focus,
-button:focus {
+
+a:focus, button:focus {
 	outline: none !important;
 }
 
@@ -21,6 +22,7 @@ blockquote {
 	padding: 0;
 	margin: 0;
 }
+
 
 input,
 button,
@@ -4115,7 +4117,7 @@ textarea.form-input {
 .radio .radio-custom-dummy::after,
 .radio-inline .radio-custom-dummy::after {
 	content: '\f222';
-	font-family: "Material Design Icons";
+	font-family: "Material Icons";
 	position: absolute;
 	top: 0;
 	left: 1px;
@@ -4258,7 +4260,7 @@ textarea.form-input {
 
 .input-refilter input:checked ~ span {
 	color: #6ebbeb;
-	border-color: transparent;
+	border-color: #6ebbeb;
 	transition: .3s ease-out all;
 }
 
@@ -4268,7 +4270,7 @@ textarea.form-input {
 }
 
 .toggle-custom:checked ~ .checkbox-custom-dummy::after {
-	background: #6ebbeb;
+	background: #fff;
 	transform: translate(20px, -50%);
 }
 
@@ -8198,7 +8200,7 @@ a.product-button:hover {
 }
 
 .product-sm .product-header {
-	min-height: 251px;
+	min-height: 150px;
 }
 
 .product-sm .product-header .badge {
@@ -8207,7 +8209,7 @@ a.product-button:hover {
 }
 
 .product-sm .product-content {
-	padding: 20px 10px;
+	padding: 10px 10px;
 }
 
 .product-sm .product-title,
@@ -8224,6 +8226,7 @@ a.product-button:hover {
 	width: 53px;
 	height: 53px;
 	line-height: 53px;
+	margin-bottom: 90px;
 }
 
 .product-sm .product-share {
@@ -13211,7 +13214,9 @@ span.page-link:hover, span.page-link:focus, span.page-link:active {
 .modal-video .modal-body {
 	padding: 0;
 }
-
+.modal-body{
+	position: static;
+}
 .modal-video .modal-header {
 	border: none;
 }
