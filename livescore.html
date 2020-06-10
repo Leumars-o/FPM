@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Football market prediction</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <script src="cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="/fonts.googleapis.com/css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="preloader-body">
+        <div id="preloader-item"></div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page animated" style="animation-duration: 300ms;">
+
+      <!-- Page Header-->
+      <header class="section page-header rd-navbar-dark">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="166px" data-xl-stick-up-offset="166px" data-xxl-stick-up-offset="166px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-main"><span></span></button>
+              </div>
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-main-top">
+                  <div class="rd-navbar-main-container container">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#">Results</a> </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="booking codes.html">Booking codes</a> </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#">Blog</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#">Contact</a> </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#">Livescore</a> </li>
+                    </ul>
+                    <div class="rd-navbar-main-element">
+                          <ul class="list-inline list-inline-sm">
+                          <li><a class="icon icon-xs icon-light fa fa-facebook" href="index.html#"></a></li>
+                          <li><a class="icon icon-xs icon-light fa fa-twitter" href="index.html#"></a></li>
+                          <li><a class="icon icon-xs icon-light fa fa-instagram" href="index.html#"></a></li>
+                          <!--<li><a class="icon icon-xs icon-light fa fa-user rd-nav-link" href="login & register.html"><span> Your Account</span></a></li>-->
+                          <li><a class="link link-icon link-icon-left link-classic" href="#"><span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Your Account</span></a>
+                              <ul class="rd-menu rd-navbar-dropdown">
+                              <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="profile.html">Edit profile</a>
+                              </li>
+                              <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#" data-toggle="modal" data-target="#bannerformmodal" data-backdrop="false">Drop Booking Code</a>
+                              </li>
+                              <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#" data-toggle="modal" data-target="#bannerformmodal-1" data-backdrop="false">Confirm winning codes</a>
+                              </li>
+                              <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="standings.html">logout</a>
+                              </li>
+                              </ul>
+                          </li>
+                          </ul>
+                          <!--bannerformmodal-->
+                          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+                          <div class="modal-dialog modal-md modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title" style="color: #212121;">Booking code</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                          <form id="requestacallform" method="POST" name="requestacallform">
+                  
+                                              <div class="form-group">
+                                                  <div class="input-group">                               
+                                                  <span class="input-group-addon"><i class="fa fa-file"></i></span>
+                                                  <input id="booking-code" type="text" class="form-control" placeholder="Code" name="booking-code"/>
+                                                  </div>
+                                              </div>
+                                              <div class="input-group mb-3">
+                                                  <div class="input-group-prepend">
+                                                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bookmarker</button>
+                                                  <div class="dropdown-menu">
+                                                      <a class="dropdown-item" href="#">Bet9ja</a>
+                                                      <a class="dropdown-item" href="#">Bet King</a>
+                                                      <a class="dropdown-item" href="#">Sporty Bet</a>
+                                                      <div role="separator" class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">1Xbet</a>
+                                                      <a class="dropdown-item" href="#">Nairabet</a>
+                                                  </div>
+                                                  </div>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-sm btn-blue">Submit</button>
+                                  </div>          
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          <!--End of bannerformmodal-->
+
+                          <!--bannerformmodal-1-->
+                          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal-1">
+                                  <div class="modal-dialog modal-md modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                          <h4 class="modal-title" style="color: #212121;">Winning Tickets</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                                  <form id="requestacallform" method="POST" name="requestacallform">
+                          
+                                                      <div class="form-group">
+                                                          <div class="input-group">                               
+                                                          <span class="input-group-addon"><i class="fa fa-file"></i></span>
+                                                          <input id="booking-code" type="text" class="form-control" placeholder="Booking Code" name="booking-code"/>
+                                                          </div>
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <div class="input-group">
+                                                              <span class="input-group-addon"><i class="fa fa-building-o"></i></span>
+                                                              <input id="booking-code" type="text" class="form-control" placeholder="Betslip ID" name="betslip ID"/>
+                                                          </div>
+                                                      </div>
+                                                      <div class="input-group mb-3">
+                                                          <div class="input-group-prepend">
+                                                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bookmarker</button>
+                                                              <div class="dropdown-menu">
+                                                                  <a class="dropdown-item" href="#">Bet9ja</a>
+                                                                  <a class="dropdown-item" href="#">Bet King</a>
+                                                                  <a class="dropdown-item" href="#">Sporty Bet</a>
+                                                                  <div role="separator" class="dropdown-divider"></div>
+                                                                  <a class="dropdown-item" href="#">1Xbet</a>
+                                                                  <a class="dropdown-item" href="#">Nairabet</a>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div>
+                                                          <p style="color: #212121;">Pls see <a href="#">T&C</a> for approval of winning tickets</p>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                          <button type="button" class="btn btn-sm btn-blue">Submit</button>
+                                          </div>          
+                                  </div>
+                                  </div>
+                                  </div>
+                          </div>
+                          <!--End of bannerformmodal-1-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+      </header>
+      <!--End of Page Header-->
+
+      <!--Header image-->
+      <section class="section swiper-container swiper-slider swiper-classic bg-gray-2 swiper-container-horizontal swiper-container-fade" data-loop="false" data-slide-effect="fade">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" data-slide-bg="images/slider-1-slide-3-1920x671.jpg" style="background-image: url(&quot;images/slider-1-slide-3-1920x671.jpg&quot;); background-size: cover; width: 877px; transform: translate3d(-2631px, 0px, 0px); opacity: 1; transition-duration: 0ms;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="swiper-slide-caption">
+                      <h1 data-caption-animate="fadeInUp" data-caption-delay="100" class="fadeInUp animated">Football Prediction market</h1>
+                      <h4 data-caption-animate="fadeInUp" data-caption-delay="300" class="fadeInUp animated">for soccer prediction, news, <br class="d-none d-xl-block"> and game results</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--End of Header image-->
+
+      <!-- Section Body-->
+      <section class="section section-sm bg-gray-100"> 
+        <div class="container">
+          <div class="row row-50">
+
+            <!--Left section-->
+            <div class="col-lg-2">
+              <div class="row row-30">
+                <div class="col-md-6 col-lg-12"> 
+                  <!--Latest results header-->
+                  <article class="heading-component">
+                    <div class="heading-component-inner">
+                      <h5 class="heading-component-title">Countries</h5>
+                    </div>
+                  </article>
+                  <!--end of latest results header-->
+                  <div  id="latest_results">
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!--end of left section-->
+
+            <!--Main football prediction section-->
+            <div class="col-lg-8">
+              <!-- Heading Component-->
+              <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Livescore
+                    </h5>
+                    <div class="heading-component-aside">
+                      <ul class="list-inline list-inline-xs list-inline-middle">
+                        <li>
+                          <select class="select select-minimal" data-placeholder="Select an option" data-dropdown-class="select-minimal-dropdown" style="min-width: 170px;">
+                            <option value="Yesterday">01/01 Mon</option>
+                            <option value="Yesterday">02/01 Tue</option>
+                            <option value="tomorrow">03/01 Wed</option>
+                            <option value="Yesterday">04/01 Thu</option>
+                            <option value="tomorrow">05/01 Fri</option>
+                            <option value="Yesterday">06/01 Sat</option>
+                            <option value="tomorrow">07/01 Sun</option>
+                            <option value="Today" selected="">Today</option>
+                            <option value="Yesterday">09/01 Mon</option>
+                            <option value="tomorrow">10/01 Tue</option>
+                            <option value="Yesterday">11/01 Wed</option>
+                            <option value="tomorrow">12/01 Thu</option>
+                            <option value="Yesterday">13/01 Fri</option>
+                            <option value="tomorrow">14/01 Sat</option>
+                            <option value="Yesterday">15/01 Sun</option>
+                          </select>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </article>
+              <!--end of heading-->
+              <!-- Livescore-->
+              <div class="table" id="tbl-1">
+                  <table class="tbl table-modern">
+                    <thead class="table-dark">
+                      <tr>
+                        <th class="table-country">England</th>
+                        <th colspan="2">Premier League</th>
+                        <th class= "table-pdt" colspan="2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; prediction</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="w-10">
+                          <td><span class="table-counter">88'</span></td>
+                        <td class="t-home">
+                          Chelsea
+                        </td>
+                        <td class="t-score">
+                        <a href="#">
+                          <span>1</span>&nbsp-&nbsp<span>2</span>
+                        </a>
+                        </td>
+                        <td class="t-away">
+                          Arsenal
+                        </td>
+                        <td>O 3:0</td>
+                      </tr>
+                      <tr>
+                          <td><span class="table-counter">88'</span></td>
+                        <td class="t-home">
+                          Chelsea
+                        </td>
+                        <td class="t-score">
+                        <a href="#">
+                          <span>1</span>&nbsp-&nbsp<span>2</span>
+                        </a>
+                        </td>
+                        <td class="t-away">
+                          Arsenal
+                        </td>
+                        <td>O 3:0</td>
+                      </tr>
+                      <tr>
+                          <td><span class="table-counter">88'</span></td>
+                        <td class="t-home">
+                          Chelsea
+                        </td>
+                        <td class="t-score">
+                        <a href="#">
+                          <span>1</span>&nbsp-&nbsp<span>2</span>
+                        </a>
+                        </td>
+                        <td class="t-away">
+                          Arsenal
+                        </td>
+                        <td>O 3:0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <!--End  of Livescore-->
+            </div>
+            <!--End of main football prediction section-->
+
+            <!--Right section-->
+            <div class="col-lg-2">
+              <div class="row row-30">
+                <!--Blog item-->
+                <div class="block-aside-item">
+                  <!-- Heading Component-->
+                  <article class="heading-component">
+                    <div class="heading-component-inner">
+                      <h5 class="heading-component-title">In The Spotlight
+                      </h5><a class="button button-xs button-gray-outline" href="news-5.html">All News</a>
+                    </div>
+                  </article>
+                  <!-- List Post Classic-->
+                  <div class="list-post-classic">
+                    <!-- Post Classic-->
+                    <article class="post-classic">
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="images/blog-element-1-94x94.jpg" alt="" width="94" height="94"></a></div>
+                      <div class="post-classic-main">
+                        <p class="post-classic-title"><a href="blog-post.html">Raheem Sterling turns the tide for Manchester</a></p>
+                        <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2019">April 15, 2019</time>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- Post Classic-->
+                    <article class="post-classic">
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="images/blog-element-2-94x94.jpg" alt="" width="94" height="94"></a></div>
+                      <div class="post-classic-main">
+                        <p class="post-classic-title"><a href="blog-post.html">Prem in 90 seconds: Chelsea's crisis is over!</a></p>
+                        <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2019">April 15, 2019</time>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- Post Classic-->
+                    <article class="post-classic">
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="images/blog-element-3-94x94.jpg" alt="" width="94" height="94"></a></div>
+                      <div class="post-classic-main">
+                        <p class="post-classic-title"><a href="blog-post.html">Good vibes back at struggling Schalke</a></p>
+                        <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2019">April 15, 2019</time>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- Post Classic-->
+                    <article class="post-classic">
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="images/blog-element-4-94x94.jpg" alt="" width="94" height="94"></a></div>
+                      <div class="post-classic-main">
+                        <p class="post-classic-title"><a href="blog-post.html">Liverpool in desperate need of backup players</a></p>
+                        <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
+                          <time datetime="2019">April 15, 2019</time>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <!--End of blog item-->
+              </div>
+            </div>
+            <!--end of Right section-->
+
+          </div>
+        </div>
+      </section>
+      <!--End of section Body-->
+
+      <!-- Page Footer-->
+      <footer class="section footer-classic footer-classic-dark context-dark">
+          <div class="footer-classic-main">
+              <div class="container">
+                  <p class="heading-7">Subscribe to our Newsletter</p>
+                  <!-- RD Mailform-->
+                  <form class="rd-mailform rd-form rd-inline-form-creative" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="https://livedemo00.template-help.com/wt_63853_v4/soccer/bat/rd-mailform.php">
+                      <div class="form-wrap">
+                      <div class="form-input-wrap">
+                          <input class="form-input" id="footer-form-email" type="email" name="email" data-constraints="@Required">
+                          <label class="form-label" for="footer-form-email">Enter your E-mail</label>
+                      </div>
+                      </div>
+                      <div class="form-button">
+                      <button class="button button-primary-outline" type="submit" aria-label="Send"><span class="icon fa fa-envelope"></span></button>
+                      </div>
+                  </form>
+                  <div class="row row-50">
+                      <div class="col-lg-5 text-center text-sm-left">
+          
+                          <ul class="list-inline list-inline-bordered list-inline-bordered-lg">
+                              <li>
+                              <div class="unit unit-horizontal unit-middle">
+                                  <div class="unit-left">
+                                  <svg class="svg-color-primary svg-sizing-35" x="0px" y="0px" width="72px" height="72px" viewbox="0 0 72 72">
+                                      <path d="M36.002,0c-0.41,0-0.701,0.184-0.931,0.332c-0.23,0.149-0.4,0.303-0.4,0.303l-9.251,8.18H11.58 c-1.236,0-1.99,0.702-2.318,1.358c-0.329,0.658-0.326,1.3-0.326,1.3v11.928l-8.962,7.936V66c0,0.015-0.038,1.479,0.694,2.972 C1.402,70.471,3.006,72,5.973,72h30.03h30.022c2.967,0,4.571-1.53,5.306-3.028c0.736-1.499,0.702-2.985,0.702-2.985V31.338 l-8.964-7.936V11.475c0,0,0.004-0.643-0.324-1.3c-0.329-0.658-1.092-1.358-2.328-1.358H46.575l-9.251-8.18 c0,0-0.161-0.154-0.391-0.303C36.703,0.184,36.412,0,36.002,0z M36.002,3.325c0.49,0,0.665,0.184,0.665,0.184l6,5.306h-6.665 h-6.665l6-5.306C35.337,3.51,35.512,3.325,36.002,3.325z M12.081,11.977h23.92H59.92v9.754v2.121v14.816L48.511,48.762 l-10.078-8.911c0,0-0.307-0.279-0.747-0.548s-1.022-0.562-1.684-0.562c-0.662,0-1.245,0.292-1.686,0.562 c-0.439,0.268-0.747,0.548-0.747,0.548l-10.078,8.911L12.082,38.668V23.852v-2.121v-9.754H12.081z M8.934,26.867v9.015 l-5.091-4.507L8.934,26.867z M63.068,26.867l5.091,4.509l-5.091,4.507V26.867z M69.031,34.44v31.559 c0,0.328-0.103,0.52-0.162,0.771L50.685,50.684L69.031,34.44z M2.971,34.448l18.348,16.235L3.133,66.77 c-0.059-0.251-0.162-0.439-0.162-0.769C2.971,66.001,2.971,34.448,2.971,34.448z M36.002,41.956c0.264,0,0.437,0.057,0.546,0.104 c0.108,0.047,0.119,0.059,0.119,0.059l30.147,26.675c-0.3,0.054-0.79,0.207-0.79,0.207H36.002H5.98H5.972 c-0.003,0-0.488-0.154-0.784-0.207l30.149-26.675c0,0,0.002-0.011,0.109-0.059C35.555,42.013,35.738,41.956,36.002,41.956z"></path>
+                                  </svg>
+                                  </div>
+                                  <div class="unit-body">
+                                  <h6>Contact Us</h6><a class="link" href="mailto:#">info@website.org</a>
+                                  </div>
+                              </div>
+                              </li>
+                          </ul>
+                          <div class="group-md group-middle">
+                              <div class="group-item">
+                              <ul class="list-inline list-inline-xs">
+                                  <li><a class="icon icon-corporate fa fa-facebook" href="index.html#"></a></li>
+                                  <li><a class="icon icon-corporate fa fa-twitter" href="index.html#"></a></li>
+                                  <!--<li><a class="icon icon-corporate fa fa-whatsapp" href="index.html#"></a></li>-->
+                                  <li><a class="icon icon-corporate fa fa-instagram" href="index.html#"></a></li>
+                              </ul>
+                              </div><a class="button button-sm button-gray-outline" href="https://livedemo00.template-help.com/wt_63853_v4/soccer/contact-us.html">Get in Touch</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+      
+      <div class="footer-classic-aside footer-classic-darken">
+              <div class="container">
+              <div class="layout-justify">
+                  <!-- Rights-->
+                  <p class="rights"><span>Leumas</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span><span>.&nbsp;</span><a class="link-underline" href="https://livedemo00.template-help.com/wt_63853_v4/soccer/privacy-policy.html">Privacy Policy</a></p>
+              </div>
+              </div>
+      </div>
+      </footer>
+      <!--End of Page footer-->
+    </div>
+    <!--End of Page-->
+
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/fixtures.js"></script>
+  </body>
+  <!-- Google Tag Manager -- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+</html>
