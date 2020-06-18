@@ -14,7 +14,7 @@ class Database{
     // private $password = "messilo18_";
    
     private $host = "localhost";
-    private $db_name = "i-trade";
+    private $db_name = "fpm-bet";
     private $username = "root";
     private $password = "";
 

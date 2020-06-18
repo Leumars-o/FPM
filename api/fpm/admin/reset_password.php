@@ -24,7 +24,7 @@ $database = new Database();
 $db = $database->getConnection();
 
 // prepare job object
-$job = new job($db);
+$job = new Admin($db);
 
 // get job_i
 

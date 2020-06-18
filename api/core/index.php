@@ -1,10 +1,10 @@
 <?php
 require 'Base.php';
 
-class Courier extends Base {
+class Bookings extends Base {
 
   // database connection and table name
-  private $conn,$table_name = "couriers";
+  private $conn,$table_name = "bookings";
 
   // object properties
   public $id, $company_name, $description, $location, $salary_range, $qualification, $working_hours, $age,
