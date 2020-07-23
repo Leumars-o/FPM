@@ -23,29 +23,22 @@ class User extends Base {
     $query = "INSERT INTO
                 " . $this->table_name . "
             SET
-            user_id=:user_id,firstname=:firstname,lastname=:lastname,email=:email,
-            created_at=:created_at,password=:password,username=:username,fullname=:fullname,account_number=:account_number
+            user_id=:user_id,email=:email,
+            created_at=:created_at,password=:password,username=:username
              ";
     // prepare query
     $stmt = $this->conn->prepare($query);
     $user_id = time().uniqid();
     // sanitize
-    $this->firstname = htmlspecialchars(strip_tags($this->firstname));
-    $this->lastname = htmlspecialchars(strip_tags($this->lastname));
     $this->email = htmlspecialchars(strip_tags(trim($this->email)));
     $this->username = htmlspecialchars(strip_tags(trim($this->username)));
     $this->created_at = date('Y-m-d H:i:s');
     $this->password = password_hash(htmlspecialchars(strip_tags(trim($this->password))),PASSWORD_BCRYPT);
     
     $this->user_id = rand(3,34).time();
-    $this->account_number = (rand(0,11).time());
     // bind values
-     $stmt->bindParam(":firstname", $this->firstname);
-     $stmt->bindParam(":lastname", $this->lastname);
      $stmt->bindParam(":email", $this->email);
      $stmt->bindParam(":username",$this->username);
-     $stmt->bindParam(":account_number",$this->account_number);
-     $stmt->bindParam(":fullname", $this->fullname);
    $stmt->bindParam(":created_at", $this->created_at);
     $stmt->bindParam(":user_id",$user_id);
    $stmt->bindParam(":password",$this->password);

@@ -8,15 +8,16 @@ class Database{
     // private $password = "96654dd2";
     
     //local host crednetials
-    // private $host = "localhost";
-    // private $db_name = "trackcou_codemon";
-    // private $username = "trackcou_codemon";
-    // private $password = "messilo18_";
-   
     private $host = "localhost";
-    private $db_name = "fpm-bet";
-    private $username = "root";
-    private $password = "";
+    private $db_name = "busines9_main";
+    private $username = "busines9_main";
+    private $password = "iftrueconnect";
+
+   
+    // private $host = "localhost";
+    // private $db_name = "fpm-bet";
+    // private $username = "root";
+    // private $password = "";
 
     public $conn;
     

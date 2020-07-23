@@ -24,12 +24,12 @@ $db = $database->getConnection();
 $user = new User($db);
 
 
-$email = isset($_REQUEST['email']) ? $_REQUEST['email'] : null;
+$username = isset($_REQUEST['username']) ? $_REQUEST['username'] : null;
 $password = isset($_REQUEST['password']) ? $_REQUEST['password'] : null;
 
-if($email === null || $password === null){
+if($username === null || $password === null){
    
-        echo $user->forbidden('Email or password was left empty');
+        echo $user->forbidden('username or password was left empty');
         return;
 }
 
@@ -40,23 +40,23 @@ if($email === null || $password === null){
  try {
    
    $user->query("SELECT *
-     FROM users WHERE email = ?",[$email]);
+     FROM users WHERE username = ?",[$username]);
 
     if($user->_result){
         $pass = $user->_result[0]->password;
      $valid =   password_verify($password,$pass) ? 1 : 0;
      if($valid){
         $user->_result[0]->password= null;
+        session_regenerate_id(true);
+
         $_SESSION['user_id'] = $user->_result[0]->user_id;
         $_SESSION['user_authenticated'] =  true;
-        $_SESSION['first_name'] = $user->_result[0]->firstname;
         $_SESSION['username'] = $user->_result[0]->username;
-        $_SESSION['last_name'] = $user->_result[0]->lastname;
 
     echo  $user->actionSuccess(['data' => $user->_result]);
     return;
      }else{
-    echo  $user->actionFailure('Email and password does not match');
+    echo  $user->actionFailure('username and password does not match');
         return;
      }
     } else {

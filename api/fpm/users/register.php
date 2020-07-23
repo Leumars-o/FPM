@@ -8,13 +8,13 @@ session_start();
  // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: GET");
+header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    die('HEY NIGGA!! SEND THE RIGHT REQUEST TYPE');
-}
+// if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+//     die('HEY NIGGA!! SEND THE RIGHT REQUEST TYPE');
+// }
 
 // include database and object file
 include_once '../../config/db.php';
@@ -29,27 +29,21 @@ $user = new User($db);
 
 // get user_i
 
-$firstname = isset($_REQUEST['firstname']) ? $_REQUEST['firstname'] : null;
-$lastname = isset($_REQUEST['lastname']) ? $_REQUEST['lastname'] : null;
-$username = isset($_REQUEST['username']) ? $_REQUEST['username'] : null;
-$fullname = isset($_REQUEST['fullname']) ? $_REQUEST['fullname'] : null;
-$email = isset($_REQUEST['email']) ? $_REQUEST['email'] : null;
-$password = isset($_REQUEST['password']) ? $_REQUEST['password'] : null;
+$username = isset($_GET['username']) ? $_GET['username'] : null;
+$email = isset($_GET['email']) ? $_GET['email'] : null;
+$password = isset($_GET['password']) ? $_GET['password'] : null;
 
 
-if($firstname === null || $firstname === null || $lastname ===   null || $password === null){
+if($username === null || $email === null || $password === null){
         http_response_code(403);
         // echo $_REQUEST['firstname'];
         echo $user->forbidden('You cannot go any furthe,details are incomplete');
         return;
 }
 
-$user->firstname =  $firstname;
-$user->lastname = $lastname;
 $user->email = $email;
 $user->password = $password;
 $user->username = $username;
-$user->fullname = $firstname.' '.$lastname;
 $user->query("SELECT email FROM $user->table_name WHERE email =? ",[$email]);
 
 if($user->_result){
@@ -58,16 +52,21 @@ if($user->_result){
     return;
 }
 
+$user->query("SELECT username FROM $user->table_name WHERE username =? ",[$username]);
+
+if($user->_result){
+    echo $user->actionFailure('Username already in use');
+    return;
+}
+
  try {
 
      $user->register();
      http_response_code(201);
+     session_regenerate_id(true);
      $_SESSION['user_authenticated'] = true;
      $_SESSION['username'] = $user->username;
      $_SESSION['user_id'] = $user->user_id;
-     $_SESSION['firstname'] = $user->firstname;
-     $_SESSION['lastname'] = $user->lastname;
-     $_SESSION['acount_number'] = $user->account_number;
 
 
      echo $user->actionSuccess('Account created successfully');

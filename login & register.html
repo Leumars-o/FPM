@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    </head>
+    </head> 
     <body class="">
         
         <div id="preloader" class="loaded">
@@ -152,7 +152,7 @@
                       </div>
                     </div>
                     <div class="card-form card-form-login">
-                      <form class="rd-form rd-mailform" novalidate="novalidate">
+                      <form class="rd-form rd-mailform" novalidate="novalidate" method="POST" action="/api/fpm/users/login.php">
                         <div class="form-wrap">
                           <label class="form-label rd-input-label" for="form-login-name-1">Login</label>
                           <input class="form-input form-control-has-validation form-control-last-child" id="form-login-name-1" type="text" name="form-input" data-constraints="@Required"><span class="form-validation"></span>
@@ -169,7 +169,7 @@
                       <div class="group-sm group-sm-justify group-middle"><a class="button button-google button-icon button-icon-left button-round" href="#"><span class="icon fa fa-google-plus"></span><span>Google+</span></a><a class="button button-twitter button-icon button-icon-left button-round" href="#"><span class="icon fa fa-twitter"></span><span>Twitter</span></a><a class="button button-facebook button-icon button-icon-left button-round" href="#"><span class="icon fa fa-facebook"></span><span>Facebook</span></a></div>
                     </div>
                     <div class="card-form card-form-register">
-                      <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                      <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="POST" action="/api/fpm/users/register.php" novalidate="novalidate">
                         <div class="form-wrap">
                           <label class="form-label rd-input-label" for="form-register-email">E-mail</label>
                           <input class="form-input form-control-has-validation form-control-last-child" id="form-register-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
